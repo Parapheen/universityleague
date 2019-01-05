@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
+/* Eric Meyer's CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -13,94 +14,194 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+
 
 
 .wrapper {
 	width: 100%;
 	margin: 0 auto;
 	background-color:#FFFFFF;
+    clear: both;
 }
 
 header {
-	width: 1380px;
+	width: 100%;
 	height: 81px;
 	object-fit: contain;
 	background-color: #ffffff;
 }
 
 
-img {
+header img {
 	padding-left: 86px;
 	padding-bottom: 8px;
 	padding-top: 10px;
 	float: left;
+    cursor: pointer;
 	}
 
 
 nav {
-	float: right;
-	margin-right: 413px;
-	margin-top: 24px;
+	padding-top: 24px;
 }
 
 
-nav ul {
-	
-}
-
-nav ul li {
-	display: inline-block;
+.menu li {
+	display: inline-flex;
 	list-style: none;
-	margin-left: 105px;	
+	padding-left: 105px;	
 }
 
 
-nav ul li a {
+.menu li a {
     font-family: SFUIDisplay-Medium;
     font-size: 20px;
     font-weight: 500;
     color: #4d4886;
 	text-decoration: none;
+    cursor: pointer;
 }
 
-.Rectangle {
-  width: 80px;
-  height: 8px;
-  background-color: #4d4886;
-	margin-top: 5px;
-	margin-left: 105px;
+.menu li a:hover{
+    border-bottom: 3px solid #4d4886;
+    cursor:pointer;
+}
+
+.menu .login{
+    background-color: #4d4886;
+    max-width: 100%;
+    display: block;
+    width: 145px;
+    height: 36px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    float: right;
+    margin-left: 60px;
+    margin-right: 86px;
+    margin-top: -7px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.menu .login:hover {
+    background: #343059;
+}
+
+.menu .login:active {
+    background-color: #343059;
+    transform: translateY(4px);
+}
+
+button a{
+    text-decoration: none;
+    color: white; 
+    font-family: SFUIText-Regular;
+    font-size: 14px;
+}
+
+.photo {
+    width: 100%;
+    z-index: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  clear: both;
+}
+
+.container .registration{
+    background-color: #4d4886;
+    width: 218px;
+    height: 58px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size:14px;
+    font:SFUIText-Regular;
+    cursor: pointer;
+    position: absolute;
+    top: 65%;
+    left: 42.3%;
+    border-width: 0px;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.container .registration:hover {
+    background-color: #343059;
+}
+
+.container .registration:active {
+    background-color: #343059;
+    transform: translateY(4px);
 }
 
 
-.login {
-  width: 145px;
-  height: 36px;
-  border-radius: 6px;
-  background-color: #4d4886;
-	float: right;
-	margin-right: 88px;
-	margin-top: 18px;
-}
-.login a {
-  width: 42px;
-  height: 16px;
-  font-family: SFUIText-Regular;
-  font-size: 14px;
-  display: block;
+.title {
+  position: relative;
+  left:34%;
+  margin-top:100px;
+  height: 58px;
+  display:inline-block;
+  background: #4d4886;
+  width: 500px;
+  height: 50px;
+  font-family: SFUIText-Medium;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 600;
   text-align: center;
-  color: #d8d8d8;
-	text-decoration: none;
+  color: #ffffff;
 }
 
-#photo{
-	width: 100%;
+.title a:hover{
+    background-color: #4d4886;
+}
+
+
+.pictures {
+    margin-top: 180px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-left: 86px;
+    cursor: pointer;
+}
+
+.pictures img {
+    float: left;
 }
 
 

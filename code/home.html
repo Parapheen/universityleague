@@ -3,29 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <title>University League</title>	
-<link rel="stylesheet" href="home_style.css">
 </head>
 	
 <body>
 <header>
-	<div class="wrapper">
-	<img src="images/Logo_UL_синий.png" alt="logo">
+    <a href = "home.html">   
+       <img src="/assets/images/Logo_UL_%D1%81%D0%B8%D0%BD%D0%B8%D0%B9.png" alt="logo"> 
+    </a>     
 	<nav>
-		<ul>
-			<li><a href = "home.html">Новости</a></li>
+		<ul class = "menu">
+			<li><a href = "#">Новости</a></li>
 			<li><a href = "tournaments.html">Турниры</a></li>
 			<li><a href = "teams.html">Команды</a></li>
 			<li><a href = "about.html">О нас</a></li>
-		</ul>	
-		<div class="Rectangle"></div>
-		<div class="login"><a href = "login.html">Войти</a></div>
-	</nav>
-	</div>	
+            <button class="login" onclick = 'location.href = "login.html"'><a href = "login.html">Войти</a></button>
+		</ul>
+        <div class="Rectangle"></div>
+	</nav>	
 </header>
-	<div class="registration">
-	<img id= "photo" src="images/photo.png" alt="title">	
-	
-	</div>
-	
+    <div class = "wrapper">
+        <div class = "container">
+	        <img class= "photo" src="/assets/images/photo.png" alt="title">	
+            <button class = "registration" onclick = 'location.href = "login.html"'><a href = "login.html">Регистрация</a></button>
+        </div>
+    <div class = "news">
+            <a class = "title">ГЛАВНЫЕ НОВОСТИ</a>
+            <a href = "news1.html" class = "pictures"><img src = "assets/images/novost'.png" alt = "novost'"></a>
+            <a href = "news2.html" class = "pictures"><img src = "assets/images/novost'.png" alt = "novost'2"></a>
+            <a href = "news3.html" class = "pictures"><img src = "assets/images/novost'.png" alt = "novost'3"></a>
+            <a href = "news4.html" class = "pictures"><img src = "assets/images/novost'.png" alt = "novost'4"></a>
+        
+    </div>    
+	<link rel="stylesheet" href="/assets/css/home_style.css">
+    </div>    
 </body>
 </html>
+
