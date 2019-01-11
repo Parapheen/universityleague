@@ -56,6 +56,12 @@ table {
     clear: both;
 }
 
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
+
 header {
 	width: 100%;
 	height: 81px;
@@ -190,7 +196,7 @@ button a{
 
 .underNewstext {
     padding-top: 5px;
-    padding-left: 10px;
+    padding-left: 16px;
 }
 
 .underNewstext a {
@@ -204,6 +210,7 @@ button a{
 .hashtag{
     padding-top: 5px;
     padding-left:10px;
+    padding-bottom:5px;
 }
 .hashtag a{
     text-decoration: none;
@@ -217,51 +224,27 @@ button a{
     color:darkblue;
 }
 
-/*in desktop version there are 3 images in one row (so 6 news announcements)
-tablet – 2 images 
-phone - 1 image, so they will be in the column
-look into @media section*/
-/*
-.clearfix:after{
-    content:'';
-    display: table;
-    width:100%;
-    clear:both;
-}
-.pictures {
-    position:relative;
-    left:5%;
-    float:left;
-    margin-left: 15px;
-    padding-top: 100px;
+
+footer {
+    background-color:#4d4886;
+    margin-top: 200px;
+    display:flex;
+    justify-content: center;
 }
 
-.under_news{
-    background-color: #d8d8d8;
-    padding:0px;
-    margin-top:-3px;
+.logo_dreambig{
+  padding-right: 20px;
 }
 
-.under_news:hover{
-    cursor: pointer;
+.logo_dreambig img{
+    width: 110px;
+    height: 62px;
 }
 
-.hashtag p {
-    text-decoration: none;
-    color:#4d4886;
-    font-family: SFUIText-Medium;
-    font-size: 12px;
-    float:right;
-}
-.news a {
-    text-decoration: none;
-    color:#4d4886;
-    font-family: SFUIText-Medium;
-    font-size: 16px;
-    
-}
-
-*/
-
-
+.copyright{
+  font-family: SFUIText-Light;
+  font-size: 16px;
+  color: #ffffff;
+  align-self: center;
+  }
 
