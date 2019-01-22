@@ -1,0 +1,32 @@
+.main {
+  .container {
+
+    .quote {
+      background-image: url('../../dist/images/photo.png');
+      .registration {
+        background-color: $primaryColor;
+        width: 218px;
+        height: 58px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font: SFUIText-Regular;
+        cursor: pointer;
+        position: absolute;
+        top: 65%;
+        left: 42.3%;
+        border-width: 0px;
+        transition: all 0.3s ease 0s;
+
+
+      }
+      .registration:hover {
+        background-color: #343059;
+      }
+
+    }
+
+
+  }
+  @import "news";
+}

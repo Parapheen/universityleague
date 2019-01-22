@@ -1,0 +1,10 @@
+{
+  "ignore": ["node_modules", "dev", "dist"],
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": 3002,
+    "MONGO_URL": "mongodb://localhost/universityleague"
+  },
+  "ext": ".js,.json",
+  "watch": "./"
+}

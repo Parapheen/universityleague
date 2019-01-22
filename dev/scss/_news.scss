@@ -1,0 +1,68 @@
+.news_full {
+
+
+  /*ГЛАВНЫЕ НОВОСТИ*/
+  .title {
+    position: relative;
+    left: 32%;
+    margin-top: 100px;
+    display: table;
+    background: #4d4886;
+    width: 500px;
+    height: 50px;
+    font-family: SFUIText-Medium;
+    text-transform: uppercase;
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+    color: $whiteColor;
+  }
+
+
+  .news_section {
+    background-image: url('../../dist/images/novost.png');
+
+    .newsPic {
+      float: left;
+      padding-top: 100px;
+      padding-left: 55px;
+
+      .underNews {
+        background-color: $whiteColor;
+        margin-top: -3px;
+
+
+        .underNewstext {
+          padding-top: 5px;
+          padding-left: 16px;
+
+          a {
+            text-decoration: none;
+            color: #4d4886;
+            font-family: SFUIText-Medium;
+            font-size: 14px;
+          }
+        }
+
+
+        .hashtag {
+          padding-top: 5px;
+          padding-left: 10px;
+          padding-bottom: 5px;
+
+          a {
+            text-decoration: none;
+            color: #4d4886;
+            font-size: 12px;
+            font-family: SFUIText-Light;
+            cursor: pointer;
+          }
+
+          a:hover {
+            color: darkblue;
+          }
+        }
+      }
+    }
+  }
+}

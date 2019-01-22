@@ -1,0 +1,52 @@
+//$blackColor: #333;
+$whiteColor: #ffffff;
+//$greyColor: #e8e8e8;
+$primaryColor: #4d4886;
+//$secondaryColor: #4d4886;
+//$successColor: #87bf0a;
+//$errorColor: #e82c0c;
+$freeSpace: 24px;
+$headerHeight: 81px;
+$footerHeight: 49px;
+//$borderRadius: 2px;
+
+
+@import 'reset';
+@import 'header';
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  clear: both;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*all buttons' text*/
+button a {
+  text-decoration: none;
+  color: white;
+  font-family: SFUIText-Regular;
+  font-size: 14px;
+}
+
+/*next part of the site with the photo and registration button*/
+.photo {
+  width: 100%;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  clear: both;
+}
+
+@import 'main';
+@import 'grid';
+@import 'footer';
