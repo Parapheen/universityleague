@@ -12,33 +12,33 @@ const config = require('./config');
 
 
 //database
-mongoose.Promise = global.Promise;
-mongoose.set('debug', config.IS_PRODUCTION);
-
-mongoose.connection
-    .on('error', error => console.log(error))
-    .on('close', () => console.log('Database connection closed.'))
-    .once('open', () =>  {
-        const info = mongoose.connections[0];
-        console.log(`Connected to ${info.host}:${info.port}/${info.name}`);
-
-    });
-mongoose.connect(config.MONGO_URL,  { useNewUrlParser: true });
+// mongoose.Promise = global.Promise;
+// mongoose.set('debug', config.IS_PRODUCTION);
+//
+// mongoose.connection
+//     .on('error', error => console.log(error))
+//     .on('close', () => console.log('Database connection closed.'))
+//     .once('open', () =>  {
+//         const info = mongoose.connections[0];
+//         console.log(`Connected to ${info.host}:${info.port}/${info.name}`);
+//
+//     });
+// mongoose.connect(config.MONGO_URL,  { useNewUrlParser: true });
 
 // express
 const app = express();
 
-// sessions
-app.use(
-    session({
-        secret: config.SESSION_SECRET,
-        resave: true,
-        saveUninitialized: false,
-        store: new MongoStore({
-            mongooseConnection: mongoose.connection
-        })
-    })
-);
+// // sessions
+// app.use(
+//     session({
+//         secret: config.SESSION_SECRET,
+//         resave: true,
+//         saveUninitialized: false,
+//         store: new MongoStore({
+//             mongooseConnection: mongoose.connection
+//         })
+//     })
+// );
 
 // sets and uses
 app.set('view engine', 'ejs');
