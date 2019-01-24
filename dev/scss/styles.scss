@@ -6,3 +6,12 @@
 
 // Подключение своих SCSS файлов
 @import "header";
+@import "my";
+
+body{
+  font-family: "SF UI Display", sans-serif;
+}
+
+nav{
+  font-family: "SFUIText-Medium", serif ;
+}
