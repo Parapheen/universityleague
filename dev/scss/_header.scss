@@ -53,7 +53,7 @@
       &:hover, &:focus {
         color: $primaryColor; }}
     .dropdown-item.active {
-      color: $pagination-border-color;
+      //color: $pagination-border-color;
       background-color: $bgHighlight; }}}
 @media (max-width: 767px) {
   .navbar-expend-md .navbar-nav .show .dropdown-menu {
@@ -95,6 +95,7 @@
   .dropdown-item.active {
     color: $primaryColor;
     background-color: $bgHighlight; }}
+
 // Navbar
 // Navbar brand
 // Navbar nav
@@ -398,37 +399,31 @@
 //
 ////Button Class
 //
-//.btn {
-//  display: inline-block;
-//  font-weight: 400;
-//  color: #212529;
-//  text-align: center;
-//  vertical-align: middle;
-//  -webkit-user-select: none;
-//  -moz-user-select: none;
-//  -ms-user-select: none;
-//  user-select: none;
-//  background-color: transparent;
-//  border: 1px solid transparent;
-//  padding: 100px;
-//  font-size: 1rem;
-//  line-height: 1.5;
-//  border-radius: .25rem;
-//  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
-//}
-//
-//@media screen and (prefers-reduced-motion: reduce) {
-//  .btn {
-//    transition: none
-//  }
-//}
-//
-//.btn:hover {
-//  color: #212529;
-//  text-decoration: none
-//}
-//
-//.btn.focus, .btn:focus {
-//  outline: 0;
-//  box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
-//}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: $primaryColor;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 100px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.btn:hover {
+  color: #212529;
+  text-decoration: none
+}
+
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
