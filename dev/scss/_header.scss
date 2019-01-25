@@ -1,100 +1,181 @@
 .navbar {
+  display: flex;
   background-color: $bgDefault;
+
   .navbar-brand {
     color: $primaryColor;
+
     &:hover, &:focus {
-      color: $primaryColor; }}
+      color: $primaryColor;
+    }
+  }
+
   .navbar-text {
     color: $primaryColor;
+
     a {
       color: $primaryColor;
+
       &:hover, &:focus {
-        color: $primaryColor; }}}
+        color: $primaryColor;
+      }
+    }
+  }
+
   .navbar-nav {
+    font-size: 20px;
     .nav-link {
       color: $primaryColor;
       //border-radius: .25rem;
       margin: 0 0.5em;
+
       &:not(.disabled) {
         &:hover, &:focus {
-          color: $primaryColor; }}}
+          color: $primaryColor;
+        }
+      }
+    }
+
     @if ($dropDown) {
       .dropdown-menu {
         background-color: $bgDefault;
         border-color: $bgHighlight;
+
         .dropdown-item {
           color: $primaryColor;
+
           &:hover, &:focus, &.active {
             color: $primaryColor;
-            background-color: $bgHighlight; }}
+            background-color: $bgHighlight;
+          }
+        }
+
         .dropdown-divider {
-          border-top-color: $bgHighlight; }}}
-    .nav-item.active, .nav-item.show{
+          border-top-color: $bgHighlight;
+        }
+      }
+    }
+
+    .nav-item.active, .nav-item.show {
       .nav-link, .nav-link:hover, .nav-link:active .nav-link:focus {
         color: $primaryColor;
-        }}}
+      }
+    }
+  }
+
   .navbar-toggle {
     border-color: $bgHighlight;
+
     &:hover, &:focus {
-      background-color: $bgHighlight; }
+      background-color: $bgHighlight;
+    }
+
     .navbar-toggler-icon {
-      color: $primaryColor; }}
+      color: $primaryColor;
+    }
+  }
+
   .navbar-collapse,
   .navbar-form {
-    border-color: $primaryColor; }
+    border-color: $primaryColor;
+  }
+
   .navbar-link {
     color: $primaryColor;
+
     &:hover {
-      color: $primaryColor; }}}
+      color: $primaryColor;
+    }
+  }
+}
+
 @media (max-width: 575px) {
   .navbar-expend-sm .navbar-nav .show .dropdown-menu {
     .dropdown-item {
       color: $primaryColor;
+
       &:hover, &:focus {
-        color: $primaryColor; }}
+        color: $primaryColor;
+      }
+    }
+
     .dropdown-item.active {
       //color: $pagination-border-color;
-      background-color: $bgHighlight; }}}
+      background-color: $bgHighlight;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .navbar-expend-md .navbar-nav .show .dropdown-menu {
     .dropdown-item {
       color: $primaryColor;
+
       &:hover, &:focus {
-        color: $primaryColor; }}
+        color: $primaryColor;
+      }
+    }
+
     .dropdown-item.active {
       color: $primaryColor;
-      background-color: $bgHighlight; }}}
+      background-color: $bgHighlight;
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .navbar-expend-lg .navbar-nav .show .dropdown-menu {
     .dropdown-item {
       color: $primaryColor;
+
       &:hover, &:focus {
-        color: $primaryColor; }}
+        color: $primaryColor;
+      }
+    }
+
     .dropdown-item.active {
       color: $primaryColor;
-      background-color: $bgHighlight; }}}
+      background-color: $bgHighlight;
+    }
+  }
+}
+
 @media (max-width: 1199px) {
-  .login{
-    float:right;
+  .login {
+    float: right;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
   }
   .navbar-expend-xl .navbar-nav .navbar-text .show .dropdown-menu {
     .dropdown-item {
       color: $primaryColor;
+
       &:hover, &:focus {
-        color: $primaryColor; }}
+        color: $primaryColor;
+      }
+    }
+
     .dropdown-item.active {
       color: $primaryColor;
-      background-color: $bgHighlight; }}}
+      background-color: $bgHighlight;
+    }
+  }
+}
+
 .navbar-expend .navbar-nav .show .dropdown-menu {
   .dropdown-item {
     color: $primaryColor;
+
     &:hover, &:focus {
-      color: $primaryColor; }}
+      color: $primaryColor;
+    }
+  }
+
   .dropdown-item.active {
     color: $primaryColor;
-    background-color: $bgHighlight; }}
+    background-color: $bgHighlight;
+  }
+}
 
 // Navbar
 // Navbar brand
@@ -400,7 +481,7 @@
 ////Button Class
 //
 .btn {
-  display: inline-block;
+  display: flex;
   font-weight: 400;
   color: $primaryColor;
   text-align: center;

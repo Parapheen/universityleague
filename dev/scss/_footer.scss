@@ -1,42 +1,42 @@
-.footer {
- // background-color: #4d4886;
-  display: flex;
-  flex-direction: column;
-  height: $footerHeight;
-//  border-top: 1px solid $greyColor;
+footer {
   background-color: $primaryColor;
-
-  .container {
-    height: 100%;
-    line-height: $footerHeight;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 $freeSpace 0 $freeSpace;
-
-
-    .logo_dreambig {
-      background-image: url('../images/dreambigLogo.png');
-      padding-right: 20px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      width: 120px;
-      height: $footerHeight;
-      margin-top: 3px;
-    }
-
-    //.logo_dreambig img {
-    //  width: 110px;
-    //  height: 62px;
-    //}
-
-    .copyright {
-      font-family: SFUIText-Light;
-      font-size: 16px;
-      color: $whiteColor;
-      align-self: center;
-    }
-  }
+  color: $whiteColor;
+  margin-top: 3em;
+//  border-top: 1px solid $greyColor;
 }
 
-
+//
+//  .container {
+//    height: 100%;
+//    line-height: $footerHeight;
+//    justify-content: space-between;
+//    align-items: center;
+//    padding: 0 $freeSpace 0 $freeSpace;
+//
+//
+//    .logo_dreambig {
+//      background-image: url('../images/dreambigLogo.png');
+//      padding-right: 20px;
+//      background-repeat: no-repeat;
+//      background-size: contain;
+//      background-position: center;
+//      width: 120px;
+//      height: $footerHeight;
+//      margin-top: 3px;
+//    }
+//
+//    //.logo_dreambig img {
+//    //  width: 110px;
+//    //  height: 62px;
+//    //}
+//
+//    .copyright {
+//      font-family: SFUIText-Light;
+//      font-size: 16px;
+//      color: $whiteColor;
+//      align-self: center;
+//    }
+//  }
+//}
+//
+//

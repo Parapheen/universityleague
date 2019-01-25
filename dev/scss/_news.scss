@@ -2,9 +2,15 @@
   width: 100%;
 }
 
+.clearfix {}
+
 .carousel-inner{
+  display: flex;
   width:100%;
   max-height: 500px !important;
+}
+.carousel-inner .img {
+
 }
 
 
