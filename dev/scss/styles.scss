@@ -4,6 +4,8 @@
 // Подключение своих SCSS файлов
 @import "header";
 @import "news";
+@import "components/auth";
+@import "typography";
 
 // Подключение нужных SCSS исходников Bootstrap 4
 @import "../../node_modules/bootstrap/scss/bootstrap";

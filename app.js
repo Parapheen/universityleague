@@ -8,37 +8,37 @@ const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 
 const config = require('./config');
-//const routes = require('./routes');
+const routes = require('./routes');
 
 
 //database
-// mongoose.Promise = global.Promise;
-// mongoose.set('debug', config.IS_PRODUCTION);
-//
-// mongoose.connection
-//     .on('error', error => console.log(error))
-//     .on('close', () => console.log('Database connection closed.'))
-//     .once('open', () =>  {
-//         const info = mongoose.connections[0];
-//         console.log(`Connected to ${info.host}:${info.port}/${info.name}`);
-//
-//     });
-// mongoose.connect(config.MONGO_URL,  { useNewUrlParser: true });
+mongoose.Promise = global.Promise;
+mongoose.set('debug', config.IS_PRODUCTION);
+
+mongoose.connection
+    .on('error', error => console.log(error))
+    .on('close', () => console.log('Database connection closed.'))
+    .once('open', () =>  {
+        const info = mongoose.connections[0];
+        console.log(`Connected to ${info.host}:${info.port}/${info.name}`);
+
+    });
+mongoose.connect(config.MONGO_URL,  { useNewUrlParser: true });
 
 // express
 const app = express();
 
-// // sessions
-// app.use(
-//     session({
-//         secret: config.SESSION_SECRET,
-//         resave: true,
-//         saveUninitialized: false,
-//         store: new MongoStore({
-//             mongooseConnection: mongoose.connection
-//         })
-//     })
-// );
+// sessions
+app.use(
+    session({
+        secret: config.SESSION_SECRET,
+        resave: true,
+        saveUninitialized: false,
+        store: new MongoStore({
+            mongooseConnection: mongoose.connection
+        })
+    })
+);
 
 // sets and uses
 app.set('view engine', 'ejs');
@@ -53,9 +53,18 @@ app.use(
 
 //routers
 app.get('/', (req, res) => {
-    res.render('index');
+    const id = req.session.userId;
+    const login = req.session.userLogin;
+
+
+    res.render('index', {
+        user: {
+            id,
+            login
+        }
+    });
 });
-// app.use('/api/auth', routes.auth);
+app.use('/api/auth', routes.auth);
 // app.use('/post', routes.post);
 
 // catch 404 and forward to error handler

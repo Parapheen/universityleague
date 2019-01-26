@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Parapheen/universityleague#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.2.1",
     "browser-sync": "^2.26.3",
@@ -28,6 +29,8 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-uglifyjs": "^0.6.2",
     "mongoose": "^5.4.5",
     "path": "^0.12.7",
     "popper": "^1.0.1",

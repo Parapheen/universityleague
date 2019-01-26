@@ -3,6 +3,8 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cssnano = require('gulp-cssnano');
 const plumber = require('gulp-plumber');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglifyjs');
 
 gulp.task('scss', () => {
     return gulp
@@ -18,7 +20,18 @@ gulp.task('scss', () => {
         .pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('scripts', () =>
+    gulp
+        .src([
+            'dev/js/auth.js'
+            //
+        ])
+        .pipe(concat('scripts.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/javascripts'))
+);
 
-gulp.task('default', ['scss'], () => {
+gulp.task('default', ['scss', 'scripts'], () => {
     gulp.watch('dev/scss/**/*.scss', ['scss']);
+    gulp.watch('dev/js/**/*.js', ['scripts']);
 });
