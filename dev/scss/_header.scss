@@ -23,7 +23,8 @@
   }
 
   .navbar-nav {
-    font-size: 20px;
+    font-size: 1em;
+
     .nav-link {
       color: $primaryColor;
       border-radius: .25rem;
@@ -32,9 +33,11 @@
       &:not(.disabled) {
         &:hover, &:focus {
           color: $primaryColor;
+          border-bottom: 2px, $primaryColor;
         }
       }
     }
+
 
     @if ($dropDown) {
       .dropdown-menu {
