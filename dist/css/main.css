@@ -16,6 +16,8 @@ html {
 
 html, body {
     height: 100%;
+    width:100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -27,6 +29,7 @@ body {
     color: rgba(0, 0, 0, 0.8);
     margin: 0;
     padding: 0;
+
 }
 
 /* -------------------------------------------------------------------
@@ -1321,7 +1324,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .wide {
-    max-width: 1440px;
+    max-width: 1200px;
+    /* should make constant */
 }
 
 .narrow {
@@ -1454,6 +1458,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .entries-wrap {
     width: 100%;
+
+
 }
 
 .entries-wrap.add-top-padding {
@@ -1473,14 +1479,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .entries .col-block {
+
     -webkit-box-flex: 0 0 25%;
     -moz-box-flex: 0 0 25%;
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
     flex: 0 0 25%;
-    max-width: 25%;
-    padding: 0 20px;
-    margin-bottom: 4.2rem;
+    max-width: 35%;
+    margin: 0 auto;
+    padding: 25px;
+
 }
 
 .entries .item-entry {
@@ -1629,14 +1637,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
         width: 94%;
     }
 
-    /*.entries .col-block {*/
-        /*-webkit-box-flex: 0 0 33.33333%;*/
-        /*-moz-box-flex: 0 0 33.33333%;*/
-        /*-webkit-flex: 0 0 33.33333%;*/
-        /*-ms-flex: 0 0 33.33333%;*/
-        /*flex: 0 0 33.33333%;*/
-        /*max-width: 33.33333%;*/
-    /*}*/
+    .entries .col-block {
+        -webkit-box-flex: 0 0 33.33333%;
+        -moz-box-flex: 0 0 33.33333%;
+        -webkit-flex: 0 0 33.33333%;
+        -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
 
 }
 
@@ -1722,9 +1730,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     text-align: center;
     height: 78px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    z-index:1;
 }
 
 /* -------------------------------------------------------------------
@@ -1884,6 +1893,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: inline-block;
     position: relative;
     padding: 0 1.5rem;
+    margin-right: 80px;
 }
 
 .header__nav li.has-children {
@@ -1981,7 +1991,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     text-transform: none;
     letter-spacing: 0;
     line-height: 18px;
-    color: rgba(255, 255, 255, 0.6);
+    /*color: rgba(255, 255, 255, 0.6);*/
 }
 
 .header__nav li ul li a:hover,
@@ -2491,7 +2501,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1500px) {
     .s-featured > .row {
-        max-width: 1100px;
+        max-width: 100%;
     }
 
 }
@@ -2505,7 +2515,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media only screen and (max-width: 1200px) {
     .s-featured {
-        padding: 13.8rem 0 10.2rem;
+        /*padding: 13.8rem 0 10.2rem;*/
     }
 
     .featured__slide {
@@ -2559,7 +2569,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 @media only screen and (max-width: 900px) {
     .s-featured {
-        padding: 12.6rem 0 10.2rem;
+        /*padding: 12.6rem 0 10.2rem;*/
     }
 
     .featured__slide {
@@ -2612,9 +2622,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 @media only screen and (max-width: 500px) {
-    .s-featured {
-        padding: 11.4rem 0 9rem;
-    }
+    /*.s-featured {*/
+        /*padding: 11.4rem 0 9rem;*/
+    /*}*/
 
     .featured__slide h1 {
         font-size: 2.4rem;
