@@ -1,12 +1,16 @@
-.carousel-inner{
-  max-height: 500px;
+.carousel-inner > .item > img{
+ margin:auto;
 }
 
-.section_name{
-  color: white;
-  text-align: center;
-}
-.section_name span{
+.title{
   background-color: $primaryColor;
-  padding:5px;
+  width: 458px;
+  height: 58px;
+  text-align: center;
+  margin: auto;
+}
+
+.title__main{
+  color: #FFFFFF;
+  margin: auto;
 }

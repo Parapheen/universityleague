@@ -1,4 +1,4 @@
-// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
+@import "../../node_modules/bootstrap/scss/bootstrap";
 @import "variables";
 
 // Подключение своих SCSS файлов
@@ -7,15 +7,14 @@
 @import "components/auth";
 @import "typography";
 
-// Подключение нужных SCSS исходников Bootstrap 4
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
+//Спецификация
 body{
   font-family: "SF UI Display", sans-serif;
+  background-color: white;
 }
 
-nav{
-  font-family: "SFUIText-Medium", serif ;
+a{
+  text-decoration: none;
 }
 
 @import "footer";
