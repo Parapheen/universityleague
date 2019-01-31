@@ -27,7 +27,7 @@ ul li {
   border-bottom: 3px solid $primaryColor;
 }
 #menu__dropitem a:hover{
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid transparent;
 }
 .menu__dropdown {
   position: relative;
@@ -77,4 +77,17 @@ ul li {
 
 .login:hover{
   opacity: 0.9;
+}
+
+.submit_button{
+  background-color: $primaryColor;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  width:100px;
+}
+
+.dropdown-item:hover{
+  background-color: $primaryColor;
+  color: #FFFFFF;
 }

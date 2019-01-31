@@ -1,16 +1,22 @@
-<<<<<<< HEAD
-.carousel-inner{
-  max-height: 600px;
-=======
-.carousel-inner > .item > img{
- margin:auto;
->>>>>>> temp-branch
+.carousel-inner img{
+  padding-top: 70px;
 }
 
-.section_name{
-  color: white;
-text-align: center;
-}
-.section_name span{
+.title{
   background-color: $primaryColor;
-  padding: 0.4 em;
+  width: 458px;
+  height: 58px;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title__main{
+  font-size: 36px;
+}
+
+.card-body a{
+  text-decoration: none;
+  color: $primaryColor;
+}

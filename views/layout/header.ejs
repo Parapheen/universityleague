@@ -5,49 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>University League</title>
     <link rel="stylesheet" href="<%= assetFingerprint('/css/styles.css') %>">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
-<<<<<<< HEAD
-<div class="wrapper">
-<header>
-    <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand mr-5" href="#"><img src="/images/Logo_UL_vector.svg" alt="logo" class = 'logo'></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link mr-5" href="#"> Новости <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mr-5" href="#"> Команды</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link mr-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Турниры
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">University League</a>
-                        <a class="dropdown-item" href="#">ВКСЛ</a>
-                        <a class="dropdown-item" href="#">МКЛ</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"> О нас</a>
-                </li>
-
-            </ul>
-
-
-            <% include login.ejs%>
-        </div>
-    </nav>
-    </div>
-=======
 <header class="header fixed-top" id="header">
     <div class="container">
         <div class="row">
@@ -82,14 +43,38 @@
                 </nav>
             </div>
             <div class="col-lg-2 ml-auto">
-                  <button class = 'login' type = 'button'>
+                  <button class = 'login dropdown' type = 'button' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <a href = "#" class="login__text"> Войти</a>
                   </button>
+                <div class="dropdown-menu">
+                    <form class="px-4 py-3">
+                        <div class="form-group">
+                            <label for="exampleDropdownFormEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleDropdownFormPassword1">Пароль</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                    Запомнить
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit_button">Войти</button>
+                    </form>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Регистрация</a>
+                    <a class="dropdown-item" href="#">Забыли пароль?</a>
+                </div>
+
             </div>
         </div>
     </div>
 
     <!--Здесь удалил import login.ejs-->
->>>>>>> temp-branch
 
 </header>
