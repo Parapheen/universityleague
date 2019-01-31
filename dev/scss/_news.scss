@@ -1,15 +1,25 @@
+<<<<<<< HEAD
 .carousel-inner img{
   padding-top: 70px;
+=======
+.carousel-inner > .item > img{
+ margin:auto;
+>>>>>>> aef25c9bc1f210f1b1827d365422278e525b7ae6
 }
 
 .title{
   background-color: $primaryColor;
   width: 458px;
   height: 58px;
+<<<<<<< HEAD
   color:white;
   display: flex;
   justify-content: center;
   align-items: center;
+=======
+  text-align: center;
+  margin: auto;
+>>>>>>> aef25c9bc1f210f1b1827d365422278e525b7ae6
 }
 
 .title__main{
