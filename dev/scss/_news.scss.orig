@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+.carousel-inner{
+  max-height: 600px;
+=======
+.carousel-inner > .item > img{
+ margin:auto;
+>>>>>>> temp-branch
+}
+
+.title{
+  background-color: $primaryColor;
+<<<<<<< HEAD
+  padding: 0.4em;
+=======
+  width: 458px;
+  height: 58px;
+  text-align: center;
+  margin: auto;
+>>>>>>> temp-branch
+}
+
+.title__main{
+  color: #FFFFFF;
+  margin: auto;
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html class ='flex-wrap'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>University League</title>
+    <link rel="stylesheet" href="<%= assetFingerprint('/css/styles.css') %>">
+</head>
+<body>
+<<<<<<< HEAD
+<div class="wrapper">
+<header>
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand mr-5" href="#"><img src="/images/Logo_UL_vector.svg" alt="logo" class = 'logo'></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link mr-5" href="#"> Новости <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-5" href="#"> Команды</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link mr-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Турниры
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">University League</a>
+                        <a class="dropdown-item" href="#">ВКСЛ</a>
+                        <a class="dropdown-item" href="#">МКЛ</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"> О нас</a>
+                </li>
+
+            </ul>
+
+
+            <% include login.ejs%>
+        </div>
+    </nav>
+    </div>
+=======
+<header class="header fixed-top" id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+            <a href = "#">
+                <img src="/images/Logo_UL_vector.svg" alt="logo" class = 'logo'>
+            </a>
+            </div>
+            <div class="col-lg-8">
+                <nav>
+                    <ul class="menu d-flex justify-content-around">
+                        <li class = 'menu__item'>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class = 'menu__item' id = 'menu__dropitem'>
+                            <div class="menu__dropdown">
+                                <a href="#">Турниры</a>
+                                <div class="dropdown__content">
+                                    <a href="#">UL</a>
+                                    <a href="#">ВКСЛ</a>
+                                    <a href="#">МКЛ</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class = 'menu__item'>
+                            <a href="#">Команды</a>
+                        </li>
+                        <li class = 'menu__item'>
+                            <a href="#">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-2 ml-auto">
+                  <button class = 'login' type = 'button'>
+                      <a href = "#" class="login__text"> Войти</a>
+                  </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Здесь удалил import login.ejs-->
+>>>>>>> temp-branch
+
+</header>
