@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class ='flex-wrap'>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="<%= assetFingerprint('/css/styles.css') %>">
 </head>
 <body>
+<<<<<<< HEAD
 <div class="wrapper">
 <header>
     <div class="container-fluid">
@@ -46,5 +47,49 @@
         </div>
     </nav>
     </div>
+=======
+<header class="header fixed-top" id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+            <a href = "#">
+                <img src="/images/Logo_UL_vector.svg" alt="logo" class = 'logo'>
+            </a>
+            </div>
+            <div class="col-lg-8">
+                <nav>
+                    <ul class="menu d-flex justify-content-around">
+                        <li class = 'menu__item'>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li class = 'menu__item' id = 'menu__dropitem'>
+                            <div class="menu__dropdown">
+                                <a href="#">Турниры</a>
+                                <div class="dropdown__content">
+                                    <a href="#">UL</a>
+                                    <a href="#">ВКСЛ</a>
+                                    <a href="#">МКЛ</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class = 'menu__item'>
+                            <a href="#">Команды</a>
+                        </li>
+                        <li class = 'menu__item'>
+                            <a href="#">О нас</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-2 ml-auto">
+                  <button class = 'login' type = 'button'>
+                      <a href = "#" class="login__text"> Войти</a>
+                  </button>
+            </div>
+        </div>
+    </div>
+
+    <!--Здесь удалил import login.ejs-->
+>>>>>>> temp-branch
 
 </header>

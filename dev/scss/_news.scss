@@ -1,12 +1,16 @@
+<<<<<<< HEAD
 .carousel-inner{
   max-height: 600px;
+=======
+.carousel-inner > .item > img{
+ margin:auto;
+>>>>>>> temp-branch
 }
 
 .section_name{
   color: white;
-  text-align: center;
+text-align: center;
 }
 .section_name span{
   background-color: $primaryColor;
-  padding: 0.4em;
-}
+  padding: 0.4 em;

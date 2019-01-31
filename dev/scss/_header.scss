@@ -1,517 +1,80 @@
-.navbar {
-  display: flex;
-  background-color: $bgDefault;
-
-  .navbar-brand {
-    color: $primaryColor;
-
-    &:hover, &:focus {
-      color: $primaryColor;
-    }
-  }
-
-  .navbar-text {
-    color: $primaryColor;
-
-    a {
-      color: $primaryColor;
-
-      &:hover, &:focus {
-        color: $primaryColor;
-      }
-    }
-  }
-
-  .navbar-nav {
-    font-size: 1em;
-
-    .nav-link {
-      color: $primaryColor;
-      border-radius: .25rem;
-      margin: 0 0.5em;
-
-      &:not(.disabled) {
-        &:hover, &:focus {
-          color: $primaryColor;
-          border-bottom: 2px, $primaryColor;
-        }
-      }
-    }
-
-
-    @if ($dropDown) {
-      .dropdown-menu {
-        background-color: $bgDefault;
-        border-color: $bgHighlight;
-
-        .dropdown-item {
-          color: $primaryColor;
-
-          &:hover, &:focus, &.active {
-            color: $primaryColor;
-            background-color: $bgHighlight;
-          }
-        }
-
-        .dropdown-divider {
-          border-top-color: $bgHighlight;
-        }
-      }
-    }
-
-    .nav-item.active, .nav-item.show {
-      .nav-link, .nav-link:hover, .nav-link:active .nav-link:focus {
-        color: $primaryColor;
-      }
-    }
-  }
-
-  .navbar-toggle {
-    border-color: $bgHighlight;
-
-    &:hover, &:focus {
-      background-color: $bgHighlight;
-    }
-
-    .navbar-toggler-icon {
-      color: $primaryColor;
-    }
-  }
-
-  .navbar-collapse,
-  .navbar-form {
-    border-color: $primaryColor;
-  }
-
-  .navbar-link {
-    color: $primaryColor;
-
-    &:hover {
-      color: $primaryColor;
-    }
-  }
+header {
+ background: #FFFFFF;
+  padding-top:10px;
 }
 
-@media (max-width: 575px) {
-  .navbar-expend-sm .navbar-nav .show .dropdown-menu {
-    .dropdown-item {
-      color: $primaryColor;
-
-      &:hover, &:focus {
-        color: $primaryColor;
-      }
-    }
-
-    .dropdown-item.active {
-      //color: $pagination-border-color;
-      background-color: $bgHighlight;
-    }
-  }
+ul li {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width: 767px) {
-  .navbar-expend-md .navbar-nav .show .dropdown-menu {
-    .dropdown-item {
-      color: $primaryColor;
-
-      &:hover, &:focus {
-        color: $primaryColor;
-      }
-    }
-
-    .dropdown-item.active {
-      color: $primaryColor;
-      background-color: $bgHighlight;
-    }
-  }
+.menu{
+  margin-top:22px;
 }
 
-@media (max-width: 991px) {
-  .navbar-expend-lg .navbar-nav .show .dropdown-menu {
-    .dropdown-item {
-      color: $primaryColor;
-
-      &:hover, &:focus {
-        color: $primaryColor;
-      }
-    }
-
-    .dropdown-item.active {
-      color: $primaryColor;
-      background-color: $bgHighlight;
-    }
-  }
+.menu__item{
+}
+.menu__item a {
+  font-family: "SF UI Display",sans-serif;
+  font-size: 20px;
+  color:$primaryColor;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
 }
 
-@media (max-width: 1199px) {
-  .login {
-    float: right;
-  }
-  .navbar-expand-lg .navbar-nav .nav-link {
-  }
-  .navbar-expend-xl .navbar-nav .navbar-text .show .dropdown-menu {
-    .dropdown-item {
-      color: $primaryColor;
-
-      &:hover, &:focus {
-        color: $primaryColor;
-      }
-    }
-
-    .dropdown-item.active {
-      color: $primaryColor;
-      background-color: $bgHighlight;
-    }
-
-    .dropdown-item a:hover {
-      border-bottom: 3px solid $primaryColor;
-      cursor: pointer;
-    }
-  }
+.menu__item a:hover{
+  border-bottom: 3px solid $primaryColor;
 }
-  .navbar-expend .navbar-nav .show .dropdown-menu {
-    .dropdown-item {
-      color: $primaryColor;
+#menu__dropitem a:hover{
+  border-bottom: 3px solid white;
+}
+.menu__dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-      &:hover, &:focus {
-        color: $primaryColor;
-      }
-    }
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 90px;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-    .dropdown-item.active {
-      color: $primaryColor;
-      background-color: $bgHighlight;
-    }
-  }
+.dropdown__content a {
+  color: $primaryColor;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
 
-  // Navbar
-  // Navbar brand
-  // Navbar nav
-  // Navbar text
-  // Navbar divider
-  // Responsive navbar
-  // Navbar position
-  // Navbar themes
+.dropdown__content a:hover {
+  background-color: $primaryColor;
+  color: #FFFFFF;
+}
 
+.menu__dropdown:hover .dropdown__content {
+  display: block;
+}
 
-  // Navbar
-  //
-  // Provide a static navbar from which we expand to create full-width, fixed, and
-  // other navbar variations.
+.login{
+  width: 145px;
+  height: 36px;
+  background-color: $primaryColor;
+  margin-top: 20px;
+  border-radius: 6px;
+}
 
-  //.navbar {
-  //  position: relative;
-  //  display: flex;
-  //  flex-wrap: wrap; // allow us to do the line break for collapsing content
-  //  align-items: center;
-  //  justify-content: space-between; // space out brand from logo
-  //  padding: $navbar-padding-y $navbar-padding-x;
-  //
-  //  // Because flex properties aren't inherited, we need to redeclare these first
-  //  // few properties so that content nested within behave properly.
-  //  > .container,
-  //  > .container-fluid {
-  //    display: flex;
-  //    flex-wrap: wrap;
-  //    align-items: center;
-  //    justify-content: space-between;
-  //  }
-  //}
-  //
-  //
-  //// Navbar brand
-  ////
-  //// Used for brand, project, or site names.
-  //
-  //.navbar-brand {
-  //  display: inline-block;
-  //  padding-top: $navbar-brand-padding-y;
-  //  padding-bottom: $navbar-brand-padding-y;
-  //  margin-right: $navbar-padding-x;
-  //  font-size: $navbar-brand-font-size;
-  //  line-height: inherit;
-  //  white-space: nowrap;
-  //
-  //  @include hover-focus {
-  //    text-decoration: none;
-  //  }
-  //}
-  //
-  //
-  //// Navbar nav
-  ////
-  //// Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
-  //
-  //.navbar-nav {
-  //  display: flex;
-  //  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
-  //  padding-left: 0;
-  //  margin-bottom: 0;
-  //  list-style: none;
-  //
-  //  .nav-link {
-  //    padding-right: 0;
-  //    padding-left: 0;
-  //  }
-  //
-  //  .dropdown-menu {
-  //    position: static;
-  //    float: none;
-  //  }
-  //}
-  //
-  //
-  //// Navbar text
-  ////
-  ////
-  //
-  //.navbar-text {
-  //  display: inline-block;
-  //  padding-top: $nav-link-padding-y;
-  //  padding-bottom: $nav-link-padding-y;
-  //}
-  //
-  //
-  //// Responsive navbar
-  ////
-  //// Custom styles for responsive collapsing and toggling of navbar contents.
-  //// Powered by the collapse Bootstrap JavaScript plugin.
-  //
-  //// When collapsed, prevent the toggleable navbar contents from appearing in
-  //// the default flexbox row orientation. Requires the use of `flex-wrap: wrap`
-  //// on the `.navbar` parent.
-  //.navbar-collapse {
-  //  flex-basis: 100%;
-  //  flex-grow: 1;
-  //  // For always expanded or extra full navbars, ensure content aligns itself
-  //  // properly vertically. Can be easily overridden with flex utilities.
-  //  align-items: center;
-  //}
-  //
-  //// Button for toggling the navbar when in its collapsed state
-  //.navbar-toggler {
-  //  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
-  //  font-size: $navbar-toggler-font-size;
-  //  line-height: 1;
-  //  background-color: transparent; // remove default button style
-  //  border: $border-width solid transparent; // remove default button style
-  //  @include border-radius($navbar-toggler-border-radius);
-  //
-  //  @include hover-focus {
-  //    text-decoration: none;
-  //  }
-  //
-  //  // Opinionated: add "hand" cursor to non-disabled .navbar-toggler elements
-  //  &:not(:disabled):not(.disabled) {
-  //    cursor: pointer;
-  //  }
-  //}
-  //
-  //// Keep as a separate element so folks can easily override it with another icon
-  //// or image file as needed.
-  //.navbar-toggler-icon {
-  //  display: inline-block;
-  //  width: 1.5em;
-  //  height: 1.5em;
-  //  vertical-align: middle;
-  //  content: "";
-  //  background: no-repeat center center;
-  //  background-size: 100% 100%;
-  //}
-  //
-  //// Generate series of `.navbar-expand-*` responsive classes for configuring
-  //// where your navbar collapses.
-  //.navbar-expand {
-  //  @each $breakpoint in map-keys($grid-breakpoints) {
-  //    $next: breakpoint-next($breakpoint, $grid-breakpoints);
-  //    $infix: breakpoint-infix($next, $grid-breakpoints);
-  //
-  //    &#{$infix} {
-  //      @include media-breakpoint-down($breakpoint) {
-  //        > .container,
-  //        > .container-fluid {
-  //          padding-right: 0;
-  //          padding-left: 0;
-  //        }
-  //      }
-  //
-  //      @include media-breakpoint-up($next) {
-  //        flex-flow: row nowrap;
-  //        justify-content: flex-start;
-  //
-  //        .navbar-nav {
-  //          flex-direction: row;
-  //
-  //          .dropdown-menu {
-  //            position: absolute;
-  //          }
-  //
-  //          .nav-link {
-  //            padding-right: $navbar-nav-link-padding-x;
-  //            padding-left: $navbar-nav-link-padding-x;
-  //          }
-  //        }
-  //
-  //        // For nesting containers, have to redeclare for alignment purposes
-  //        > .container,
-  //        > .container-fluid {
-  //          flex-wrap: nowrap;
-  //        }
-  //
-  //        .navbar-collapse {
-  //          display: flex !important;  // stylelint-disable-line declaration-no-important
-  //
-  //          // Changes flex-bases to auto because of an IE10 bug
-  //          flex-basis: auto;
-  //        }
-  //
-  //        .navbar-toggler {
-  //          display: none;
-  //        }
-  //      }
-  //    }
-  //  }
-  //}
-  //
-  //
-  //// Navbar themes
-  ////
-  //// Styles for switching between navbars with light or dark background.
-  //
-  //// Dark links against a light background
-  //.navbar-light {
-  //  .navbar-brand {
-  //    color: $navbar-light-brand-color;
-  //
-  //    @include hover-focus {
-  //      color: $navbar-light-brand-hover-color;
-  //    }
-  //  }
-  //
-  //  .navbar-nav {
-  //    .nav-link {
-  //      color: $navbar-light-color;
-  //
-  //      @include hover-focus {
-  //        color: $navbar-light-hover-color;
-  //      }
-  //
-  //      &.disabled {
-  //        color: $navbar-light-disabled-color;
-  //      }
-  //    }
-  //
-  //    .show > .nav-link,
-  //    .active > .nav-link,
-  //    .nav-link.show,
-  //    .nav-link.active {
-  //      color: $navbar-light-active-color;
-  //    }
-  //  }
-  //
-  //  .navbar-toggler {
-  //    color: $navbar-light-color;
-  //    border-color: $navbar-light-toggler-border-color;
-  //  }
-  //
-  //  .navbar-toggler-icon {
-  //    background-image: $navbar-light-toggler-icon-bg;
-  //  }
-  //
-  //  .navbar-text {
-  //    color: $navbar-light-color;
-  //    a {
-  //      color: $navbar-light-active-color;
-  //
-  //      @include hover-focus {
-  //        color: $navbar-light-active-color;
-  //      }
-  //    }
-  //  }
-  //}
-  //
-  //// White links against a dark background
-  //.navbar-dark {
-  //  .navbar-brand {
-  //    color: $navbar-dark-brand-color;
-  //
-  //    @include hover-focus {
-  //      color: $navbar-dark-brand-hover-color;
-  //    }
-  //  }
-  //
-  //  .navbar-nav {
-  //    .nav-link {
-  //      color: $navbar-dark-color;
-  //
-  //      @include hover-focus {
-  //        color: $navbar-dark-hover-color;
-  //      }
-  //
-  //      &.disabled {
-  //        color: $navbar-dark-disabled-color;
-  //      }
-  //    }
-  //
-  //    .show > .nav-link,
-  //    .active > .nav-link,
-  //    .nav-link.show,
-  //    .nav-link.active {
-  //      color: $navbar-dark-active-color;
-  //    }
-  //  }
-  //
-  //  .navbar-toggler {
-  //    color: $navbar-dark-color;
-  //    border-color: $navbar-dark-toggler-border-color;
-  //  }
-  //
-  //  .navbar-toggler-icon {
-  //    background-image: $navbar-dark-toggler-icon-bg;
-  //  }
-  //
-  //  .navbar-text {
-  //    color: $navbar-dark-color;
-  //    a {
-  //      color: $navbar-dark-active-color;
-  //
-  //      @include hover-focus {
-  //        color: $navbar-dark-active-color;
-  //      }
-  //    }
-  //  }
-  //}
-  //
-  //
-  //
-  //
-  ////Button Class
-  //
-  .btn {
-    display: flex;
-    color: $primaryColor;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 100px;
-    font-size: 25px;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
-  }
+.login a.login__text{
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  color:white;
+}
 
-  .btn:hover {
-    color: #212529;
-    text-decoration: none
-  }
-
-  .btn.focus, .btn:focus {
-    outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
-  }
-
+.login:hover{
+  opacity: 0.9;
+}
