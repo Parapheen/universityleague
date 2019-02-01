@@ -1,25 +1,32 @@
 <<<<<<< HEAD
-.carousel-inner{
-  max-height: 600px;
+.carousel-inner img{
+  padding-top: 70px;
 =======
 .carousel-inner > .item > img{
  margin:auto;
->>>>>>> temp-branch
+>>>>>>> aef25c9bc1f210f1b1827d365422278e525b7ae6
 }
 
 .title{
   background-color: $primaryColor;
-<<<<<<< HEAD
-  padding: 0.4em;
-=======
   width: 458px;
   height: 58px;
+<<<<<<< HEAD
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+=======
   text-align: center;
   margin: auto;
->>>>>>> temp-branch
+>>>>>>> aef25c9bc1f210f1b1827d365422278e525b7ae6
 }
 
 .title__main{
-  color: #FFFFFF;
-  margin: auto;
+  font-size: 36px;
+}
+
+.card-body a{
+  text-decoration: none;
+  color: $primaryColor;
 }

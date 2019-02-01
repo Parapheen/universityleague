@@ -3,6 +3,10 @@ header {
   padding-top:10px;
 }
 
+.logo{
+padding-left:84px;
+}
+
 ul li {
   display: block;
   margin: 0;
@@ -66,12 +70,13 @@ ul li {
   background-color: $primaryColor;
   margin-top: 20px;
   border-radius: 6px;
+  cursor: pointer;
+  display: block;
 }
 
 .login a.login__text{
   text-decoration: none;
   font-size: 18px;
-  display: block;
   color:white;
 }
 
@@ -85,6 +90,7 @@ ul li {
   border-radius: 3px;
   cursor: pointer;
   width:100px;
+  height:36px;
 }
 
 .dropdown-item:hover{

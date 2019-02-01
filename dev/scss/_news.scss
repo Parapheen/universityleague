@@ -1,16 +1,18 @@
 
 .carousel-inner > .item > img{
  margin:auto;
-
 }
 
 .title{
   background-color: $primaryColor;
   width: 458px;
   height: 58px;
-
   text-align: center;
   margin: auto;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title__main{
