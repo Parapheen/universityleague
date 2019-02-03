@@ -71,7 +71,6 @@ ul li {
   margin-top: 20px;
   border-radius: 6px;
   cursor: pointer;
-  display: block;
 }
 
 .login a.login__text{
@@ -102,4 +101,39 @@ ul li {
   display: none;
 }
 
+.burger{
+  font-size: 30px;
+  color: $primaryColor;
+  padding-top: 20px;
+  padding-right:84px;
+}
 
+@media (max-width: 992px){
+  .menu__item{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: $primaryColor;
+    box-sizing: border-box;
+  }
+  .menu__item a{
+    color:white;
+  }
+  .dropdown__content{
+    width:100%;
+    display: none;
+    position: absolute;
+    background-color: white;
+  }
+  .dropdown__content a{
+    color: $primaryColor;
+  }
+  .menu__dropdown:hover .dropdown__content {
+    display: block;
+    width: 100%;
+  }
+  .login__icon{
+    font-size: 30px;
+    padding-top:15px;
+    color: $primaryColor;
+  }
+}

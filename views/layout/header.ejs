@@ -11,14 +11,22 @@
 <header class="header fixed-top" id="header">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-sm-4">
             <a href = "#">
                 <img src="/images/Logo_UL_vector.svg" alt="logo" class = 'logo'>
             </a>
             </div>
-            <div class="col-lg-8">
+            <div class="col-sm-4 d-sm-flex justify-content-sm-center pl-sm-5">
+            <button class = 'login__icon dropdown' type = 'button' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user-circle"></i>
+            </button>
+            </div>
+            <div class="col-sm-4 d-sm-flex justify-content-sm-end">
+                <i class="fa fa-bars burger"></i>
+            </div>
+            <div class="col-lg-8 col-sm-12">
                 <nav>
-                    <ul class="menu d-flex justify-content-around">
+                    <ul class="menu d-lg-flex justify-content-lg-around d-sm-block text-sm-center">
                         <li class = 'menu__item'>
                             <a href="#">Новости</a>
                         </li>
@@ -41,8 +49,8 @@
                     </ul>
                 </nav>
             </div>
-            <div class="col-lg-2 ml-auto">
-                  <button class = 'login dropdown' type = 'button' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="col-lg-2 ml-lg-auto col-sm-12 d-sm-flex justify-content-sm-center align-content-sm-center ml-sm-3">
+                  <button class = 'login dropdown d-sm-none' type = 'button' data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <a href = "#" class="login__text"> Войти</a>
                   </button>
                 <div class="dropdown-menu">
