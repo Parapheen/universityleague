@@ -109,6 +109,11 @@ ul li {
 }
 
 @media (max-width: 992px){
+  .menu{
+    padding-right: 24px;
+    display: none;
+    text-align: center;
+  }
   .menu__item{
     padding-top: 15px;
     padding-bottom: 10px;
@@ -135,5 +140,34 @@ ul li {
     font-size: 30px;
     padding-top:15px;
     color: $primaryColor;
+  }
+  .active{
+    display:block;
+  }
+  .dropdown-menu{
+    margin-left: 17em;
+  }
+}
+
+@media (max-width: 767px){
+  .logo{
+    padding-left: 0;
+  }
+  .burger{
+    padding-right: 0;
+  }
+  .menu{
+    padding-right: 30px;
+    display: none;
+    text-align: center;
+  }
+  .login__icon{
+    padding-left: 0.5em;
+  }
+  .active{
+    display: block;
+  }
+  .dropdown-menu{
+    margin:auto;
   }
 }
