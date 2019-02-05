@@ -4,7 +4,7 @@ header {
 }
 
 .logo{
-padding-left:84px;
+//padding-left:84px;
 }
 
 ul li {
@@ -105,7 +105,7 @@ ul li {
   font-size: 30px;
   color: $primaryColor;
   padding-top: 20px;
-  padding-right:84px;
+  //padding-right:84px;
 }
 
 @media (max-width: 992px){
@@ -113,6 +113,10 @@ ul li {
     padding-right: 24px;
     display: none;
     text-align: center;
+  }
+  .logo{
+    width: 50%;
+    padding-bottom:5px;
   }
   .menu__item{
     padding-top: 15px;
@@ -147,11 +151,18 @@ ul li {
   .dropdown-menu{
     margin-left: 17em;
   }
+  .card{
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 767px){
   .logo{
     padding-left: 0;
+    width: 70%;
+    padding-top: 15px;
+    padding-bottom: 5px;
   }
   .burger{
     padding-right: 0;
@@ -170,5 +181,9 @@ ul li {
   .dropdown-menu{
     width: 100%;
     margin: auto;
+  }
+  .card{
+    width: 80%;
+    margin: 0 auto;
   }
 }
