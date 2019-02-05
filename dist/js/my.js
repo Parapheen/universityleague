@@ -5,7 +5,6 @@ $(document).ready(function () {
 })
 $(document).ready(function () {
     $('.login__icon').click(function(){
-        $('.dropdown-menu').toggleClass('active')
+        $('.dropdown__login').toggleClass('active')
     })
-
 })
