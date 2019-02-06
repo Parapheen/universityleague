@@ -4,7 +4,7 @@ header {
 }
 
 .logo{
-//padding-left:84px;
+padding-left:15px;
 }
 
 ul li {
@@ -42,7 +42,7 @@ ul li {
   display: none;
   position: absolute;
   background-color: #FFFFFF;
-  min-width: 90px;
+  width: 150%;
   box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -69,7 +69,8 @@ ul li {
   height: 36px;
   background-color: $primaryColor;
   margin-top: 20px;
-  border-radius: 6px;
+  border-radius: 10px;
+  border-color: $primaryColor;
   cursor: pointer;
 }
 
@@ -81,6 +82,8 @@ ul li {
 
 .login:hover{
   opacity: 0.9;
+  //transform: scale(1.1);
+  //transition: all 2ms;
 }
 
 .submit_button{
@@ -105,7 +108,7 @@ ul li {
   font-size: 30px;
   color: $primaryColor;
   padding-top: 20px;
-  //padding-right:84px;
+  padding-right:15px;
 }
 
 @media (max-width: 992px){
@@ -127,18 +130,8 @@ ul li {
   .menu__item a{
     color:white;
   }
-  .dropdown__content{
-    width:100%;
-    display: none;
-    position: absolute;
-    background-color: white;
-  }
   .dropdown__content a{
     color: $primaryColor;
-  }
-  .menu__dropdown:hover .dropdown__content {
-    display: block;
-    width: 100%;
   }
   .login__icon{
     font-size: 30px;
@@ -163,6 +156,15 @@ ul li {
     width: 70%;
     padding-top: 15px;
     padding-bottom: 5px;
+  }
+  .dropdown__content{
+    width:100%;
+    display: none;
+    position: absolute;
+    background-color: white;
+  }
+  .dropdown__content:hover{
+    display:block;
   }
   .burger{
     padding-right: 0;

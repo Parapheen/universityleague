@@ -15,6 +15,15 @@ footer {
   padding-top: 20px;
   cursor: pointer;
 }
+.social .fab{
+  transition: transform 0.4s;
+  transform: scale(1);
+}
+
+.fab:hover{
+  transform: scale(1.5);
+  transition: all 0.2s;
+}
 
 .social .fab{
   color: white;
