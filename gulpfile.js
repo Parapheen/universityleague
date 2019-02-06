@@ -23,7 +23,8 @@ gulp.task('scss', () => {
 gulp.task('scripts', () =>
     gulp
         .src([
-            'dev/js/auth.js'
+            'dev/js/auth.js',
+            'dev/js/menu.js'
             //
         ])
         .pipe(concat('scripts.js'))
