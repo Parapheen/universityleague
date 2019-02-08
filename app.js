@@ -64,6 +64,12 @@ app.get('/', (req, res) => {
         }
     });
 });
+
+app.get('/register', (req, res) => {
+    res.render('registrationpage');
+});
+
+
 app.use('/api/auth', routes.auth);
 // app.use('/post', routes.post);
 
