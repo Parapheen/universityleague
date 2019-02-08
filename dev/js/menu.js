@@ -17,11 +17,29 @@ $(function() {
         if (flag) {
             flag = false;
             $('.dropdown__login').show('slow');
-            $('.burger').hide();
+            $('.menu').hide();
         } else {
             flag = true;
             $('.burger').show('slow');
-            $('.dropdown__login').hide();
+            $('.dropdown-menu').hide();
+        }
+    })
+});
+
+
+$(function() {
+    // toggle
+    var flag = true;
+    $('.burger').on('click', function (e) {
+        e.preventDefault();
+        if (flag) {
+            flag = false;
+            $('.menu').show('slow');
+            $('.dropdown-menu').hide();
+        } else {
+            flag = true;
+            $('.login__icon').show('slow');
+            $('.menu').hide();
         }
     })
 });
