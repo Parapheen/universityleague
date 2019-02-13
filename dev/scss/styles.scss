@@ -6,15 +6,18 @@
 @import "news";
 @import "components/auth";
 @import "typography";
+@import "account";
 
 //Спецификация
 body{
   font-family: "SF UI Display", sans-serif;
-  background-color: #E3E3E3;
+  background-color: #EFEFEF;
 }
 
 a{
   text-decoration: none;
 }
-
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5{
+  margin-bottom: 0;
+}
 @import "footer";

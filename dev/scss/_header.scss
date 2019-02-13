@@ -47,7 +47,7 @@ ul li {
   z-index: auto;
 }
 
-.dropdown__content a {
+.dropdown__content a{
   color: $primaryColor;
   padding: 8px 12px;
   text-decoration: none;
@@ -157,13 +157,21 @@ ul li {
     padding-top: 15px;
     padding-bottom: 5px;
   }
-  .dropdown__content{
-    width:100%;
-    display: none;
-    position: absolute;
-    background-color: white;
+  .menu__dropdown{
+    display: block;
   }
-  .dropdown__content:active{
+  .dropdown__content{
+    display: none;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+  }
+  .dropdown__content a{
+    display: block;
+    margin: auto;
+  }
+  .dropdown__content:hover{
     display:block;
   }
   .burger{

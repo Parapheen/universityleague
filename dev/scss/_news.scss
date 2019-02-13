@@ -3,23 +3,53 @@
  margin:auto;
 }
 
+.register_button{
+  display: block;
+  margin: 0;
+}
+
+.carousel__button__text{
+  color:white;
+}
+
+.carousel__button:hover{
+  opacity:100%;
+}
 .title{
   background-color: $primaryColor;
   width: 458px;
   height: 58px;
-  text-align: center;
   margin: auto;
   color:white;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.title__main{
-  font-size: 36px;
-}
 
 .card-body a{
   text-decoration: none;
   color: $primaryColor;
+}
+
+@media (max-width: 767px){
+  .carousel-caption__title{
+    font-size: 16px;
+  }
+  .carousel-caption__text{
+    font-size: 10px;
+    margin-bottom: -1em;
+  }
+  .carousel__button{
+    width: 50%;
+  }
+  .carousel__button a{
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+  }
+  .carousel__button:hover{
+    opacity:100%;
+  }
 }
