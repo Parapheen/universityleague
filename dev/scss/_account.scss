@@ -1,0 +1,84 @@
+.account__pic {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  outline: 4px solid $primaryColor;
+  display: flex;
+  justify-content: center;
+}
+
+.account__pic img{
+  width: 208px;
+  height:208px;
+  ////margin-left: -15px;
+  margin-top: -25px;
+}
+
+.account__nickname{
+  color: $primaryColor;
+  font-size: 20px;
+}
+
+.account__divider{
+  width: 308px;
+}
+
+.fa-edit{
+  font-size: 16px;
+  color:$primaryColor;
+  cursor: pointer;
+}
+
+.account__social a{
+  text-decoration: none;
+  color: $primaryColor;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.statistics__title{
+  font-family: SFUIText-Semibold;
+  font-size: 26px;
+  color: #1D1D1D;
+  margin-top: 5.5em;
+}
+
+.statistics__kda{
+  border: 1px solid $primaryColor;
+  background-color: white;
+  height: 50px;
+}
+
+.statistics__kda__result{
+  color: #C44D45;
+  width: 150px;
+}
+.statistics__mmr__result{
+  color: #C44D45;
+  width: 150px;
+}
+.statistics__mmr{
+  border: 1px solid $primaryColor;
+  background-color: white;
+  height: 50px;
+}
+.statistics__mmr__result{
+  color:#56A202;
+}
+.statistics__heroes{
+  border: 1px solid $primaryColor;
+  background-color: white;
+  height: 50px;
+}
+.statistics__heroes__icons{
+  width: 150px;
+}
+
+.statistics__heroes__icons img{
+  height: 25px;
+  width: 40px;
+}
+
+.title_padding{
+  padding-top: 5em;
+}
