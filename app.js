@@ -66,7 +66,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/register', (req, res) => {
-    res.render('registrationpage');
+    res.render('account');
+});
+
+app.get('/tournaments', (req, res) => {
+    res.render('tournament');
 });
 
 
