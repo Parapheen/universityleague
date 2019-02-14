@@ -1,7 +1,11 @@
 footer {
   background-color: $primaryColor;
   color: $whiteColor;
-  margin-top: 5em;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 15em;
 //  border-top: 1px solid $greyColor;
 }
 
