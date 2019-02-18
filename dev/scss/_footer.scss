@@ -17,11 +17,11 @@ footer {
 .social{
   margin:0 auto;
   padding-top: 20px;
-  cursor: pointer;
 }
 .social .fab{
   transition: transform 0.4s;
   transform: scale(1);
+  cursor: pointer;
 }
 
 .fab:hover{

@@ -1,5 +1,62 @@
 <% include layout/header.ejs%>
-
-<% include layout/news.ejs%>
-
+<div class="container">
+    <div class="row pt-5 title_padding mt-5 mb-5">
+        <div class="col-lg-12 d-flex justify-content-center pt-5">
+            <div class="title">
+                <div class="title_main">
+                    <h2 class = 'h3'>
+                        ТУРНИРЫ
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 profile pt-5">
+            <div class="profile__pic ml-auto mr-auto">
+                <img src="/images/UL_tournament.png" alt="avatar_tournament" class = 'img-fluid'>
+            </div>
+            <div class="pt-3 profile__info">
+                <div class="profile__info__nickname text-center account__nickname">University League</div>
+                <div class="profile__info__text pt-5 pb-5">
+                    <div class="profile__info__text__prize d-block text-center pb-3">
+                        <p class = 'profile__info__text__additional'>16 000 рублей</p>
+                    </div>
+                   <div class="profile__info__text__format d-block text-center pb-3">
+                       <p class = 'profile__info__text__additional'>Групповой этап/Double Elimination</p>
+                   </div>
+                   <div class="profile__info__text__number d-block text-center pb-3">
+                       <p class = 'profile__info__text__additional' id="teams_number">30 команд</p>
+                   </div>
+                    <div class="profile__info__text__org d-block text-center pb-3">
+                        <p class = 'profile__info__text__additional'>DreamBig esports</p>
+                    </div>
+                    <div class="profile__info__text__games d-block text-center">
+                        <p class = 'profile__info__text__additional'>Dota2, CS:GO, Overwatch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 tournament__stats">
+            <div class="row">
+            <div class="tournament__stats__date pt-5 ml-lg-auto ml-3">
+                <div class="menu__dropdown">
+                    <button class="tournament__dropdown dropdown-toggle">Season Mars</button>
+                    <div class="dropdown__content">
+                        <a href="/" class = 'dropdown__content__text'>Season 1</a>
+                        <a href="#" class = 'dropdown__content__text'>TBA</a>
+                        <a href="#" class = 'dropdown__content__text'>TBA</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-12 statistics">
+                    <div class = 'statistics__title text-center'>
+                        <h2>Статистика</h2>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
 <% include layout/footer.ejs%>
