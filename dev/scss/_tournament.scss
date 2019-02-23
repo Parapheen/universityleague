@@ -2,10 +2,49 @@
   background: #FFFFFF;
   border: 1px solid #979797;
 }
+.statistics__title{
+}
 
 .tournament__dropdown{
   background-color: $primaryColor;
   color: white;
   width: 150px;
   height: 50px;
+}
+
+.matches{
+  background: #FFFFFF;
+  border: 1px solid #4D4886;
+}
+
+.team__one_college, .team__second_college{
+  font-size: 14px;
+}
+
+.team__one, .team__second{
+  font-family: SFUIText-Semibold;
+  color: #1D1D1D;
+}
+
+.matches__score__left{
+  color: #56A202;
+}
+
+.matches__score__right{
+  color: #C44D45;
+}
+
+.more_matches{
+  background-color: $primaryColor;
+}
+
+.more_matches__show{
+  font-family: SFUIText-Semibold;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.more_matches a{
+  text-decoration: none;
 }
