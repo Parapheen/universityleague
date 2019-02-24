@@ -65,16 +65,13 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/register', (req, res) => {
-    res.render('account');
-});
-
-app.get('/tournaments', (req, res) => {
-    res.render('tournament');
-});
-
-
+// app.get('/register', (req, res) => {
+//     res.render('account');
+// });
 app.use('/api/auth', routes.auth);
+app.use('/tournament', routes.tournament);
+app.use('/register', routes.account);
+
 // app.use('/post', routes.post);
 
 // catch 404 and forward to error handler

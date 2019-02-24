@@ -11,7 +11,27 @@ const schema = new Schema(
         password: {
             type: String,
             required: true
+        },
+        nickname: {
+            type: String,
+            unique: true
+        },
+        firstName: {
+            type: String
+        },
+        lastName: {
+            type: String
+        },
+        age: {
+          type: Number
+        },
+        primaryGame: {
+            type: String
+        },
+        position: {
+            type: String
         }
+
     },
     {
         timestamps: true
