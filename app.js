@@ -70,6 +70,7 @@ app.get('/', (req, res) => {
 // });
 app.use('/api/auth', routes.auth);
 app.use('/tournament', routes.tournament);
+app.use('/news', routes.newsPage);
 app.use('/register', routes.account);
 
 // app.use('/post', routes.post);
