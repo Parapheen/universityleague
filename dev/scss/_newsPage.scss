@@ -1,0 +1,50 @@
+.news_full__text{
+  font-family: SFUIText-Medium;
+  font-size: 26px;
+  color: #171717;
+  text-align: justify;
+}
+
+.news_full__divider{
+  border: 1px solid #979797;
+}
+
+.comments__title{
+  font-family: SFUIText-Medium;
+  font-size: 26px;
+  color: #171717;
+  text-align: justify;
+}
+
+.comments__comment{
+  background: #FFFFFF;
+  border: 1px solid #979797;
+}
+
+.comments__comment__name{
+  font-family: SFUIText-Heavy;
+  font-size: 16px;
+  color: $primaryColor;
+}
+
+.comments__comment__divider{
+  border: 1px solid #979797;
+  width:70%;
+}
+
+.comments__comment__body__text{
+  font-family: SFUIText-Medium;
+  font-size: 16px;
+  color: #171717;
+  text-align: center;
+}
+
+.form-group label{
+  font-family: SFUIText-Medium;
+  font-size: 16px;
+  color: #171717;
+}
+
+#submit_button{
+  margin-top:0;
+}
